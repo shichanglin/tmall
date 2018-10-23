@@ -1,0 +1,96 @@
+*{
+
+
+    margin: 0;
+    padding: 0;
+
+}
+ul{
+    list-style: none;
+    /* 去除列表的点点 */
+}
+a{
+    text-decoration: none;
+}
+body{
+    font:12px/1.5 tahoma,arial,"\5b8b\4f53";
+}
+.banner{
+
+background: #ff2f7c;
+
+}
+.banner img{
+     display: block;
+     margin: 0 auto;
+}
+#header{
+    background: #f2f2f2;
+    height: 40px;
+    box-shadow: 0 2px 4px 0px rgba(0,0,0,0.30);
+}
+.wrapper{
+    
+    width: 1230px;
+    /* background: #ff2f7c; */
+    margin: 0 auto;
+    height: 40px;
+    
+}
+.header-login{
+    height: 40px;
+   /* display:inline-block;
+    */
+    float: left;
+    line-height: 40px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+
+}
+.header-login span ,.header-login a{
+    color: #999;
+}
+.header-login a{
+
+    padding-left: 20px;
+}
+.header-login a:hover{
+
+    color: #ff0036;
+}
+
+.header-list{
+    float: right;
+    /* display: inline-block; */
+}
+.header-list li{
+
+    float: left;
+    line-height: 40px;
+    padding:0 15px 20px;
+}
+
+.header-list li a{
+    color: #999999;
+}
+.header-list li a:hover{
+    color: #ff0036;
+}
+#car{
+    font-size: 14px;
+    color: #FF0036;
+}
+#phone{
+    font-size: 14px;
+    color: #FF0036;
+}
+/* #site-nav{
+height: 41px !important;
+line-height: 40px !important;
+width: auto;
+background:#f2f2f2;
+font-family: "Microsoft YaHei", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif
+
+
+
+} */
