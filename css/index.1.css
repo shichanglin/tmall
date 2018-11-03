@@ -251,47 +251,23 @@
    .category .main-cate:hover .cate-sub-list{
        display: block;
    }
-   .list-left{
-        
-        width: 543px; 
-        height: 500px;
-        /* background-color:red; */
-        float: left;
-        padding:19px 30px;
-   }
-   .list-right{
-
-    width: 189px;
-    height: 500px;
-    /* background:blue; */
-    float: right;
-   }
-.left-list-title{
-    width: 92px;
-    float: left;
-    color:#333;
+   .fashion-txt{
+    width: 60px;
+    color: #333;
+    margin-right: 30px;
+    position: relative;
     font-size: 14px;
-    font-weight: 700px;
+    font-weight: 700;
     line-height: 22px;
-    margin-top:5px;
-    /* background:#999; */
-}
-.left-list-content{
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
-    width: 451px;
+    height: 22px;
     float: left;
-}
-.left-list-content a{
-    margin-right:13px;
-    font-size: 14px;
-    color:#666;
-    
-}
-.left-list-content li{
-    float: left;
+   }
+.fashion-text{
+  font-size:16px;
+  height: 200px;
+  width: 60px;
+  display: inline-block;  
+  
 
 }
-.left-list-content a.special-color{
-
-    color:#e54077;
-}
+ 
