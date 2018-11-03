@@ -295,3 +295,34 @@
 
     color:#e54077;
 }
+.cate-sub-list .list-right .list-right-top{
+    float: left;
+    width: 73px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    height: 37px;
+    padding: 5px 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.cate-sub-list .list-right .list-right-top-a{
+    width: 73px;
+    display: block;
+    margin: 0 auto;
+
+}
+.slide-img-box img{
+
+    width: 1230px;
+    height: 500px;
+    display: block;
+}
+.slide-box{
+    position: relative;
+    height: 500px;
+    
+
+}
+.search-box a{
+    position: absolute;
+}
