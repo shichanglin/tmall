@@ -105,7 +105,7 @@
         width: 200px;
         height: 500px;
         font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
-
+        z-index:2;
     }
     .cate-title{
         height: 36px;
@@ -259,6 +259,9 @@
         float: left;
         padding:19px 30px;
    }
+   .list-left-row{
+    margin:5px 0;
+}
    .list-right{
 
     width: 189px;
@@ -320,9 +323,20 @@
 .slide-box{
     position: relative;
     height: 500px;
-    
+
 
 }
-.search-box a{
+.slide-box a{
     position: absolute;
+    left: 0px;
+    top:0px;
+
+}
+.slide-btn-box{
+    position: absolute;
+    bottom: 50px;
+    left:50%;
+    background:yellow;
+    width:200px;
+    transform: translateX(-50%);
 }
