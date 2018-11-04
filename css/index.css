@@ -336,7 +336,23 @@
     position: absolute;
     bottom: 50px;
     left:50%;
-    background:yellow;
+    background:transparent;
     width:200px;
     transform: translateX(-50%);
+    float: left;
+    display: block;
+}
+
+.slide-btn{
+    background: #000;
+    width: 25px;
+    height: 5px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 5px;
+    cursor: pointer;
+    opacity: .3;
+}
+.slide-btn-box .slide-btn:hover{
+    background:#fff;
 }
