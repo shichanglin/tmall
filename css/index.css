@@ -356,3 +356,71 @@
 .slide-btn-box .slide-btn:hover{
     background:#fff;
 }
+/* 品牌闪购 */
+    .brand-sale{
+        height:370px;
+        /* background:#fff; */
+        margin-top: 30px;
+        /* margin-right: 44.5px;
+        margin-left: 44.5px; */
+        /* padding-top:24px; */
+            
+    }
+    .brand-list{
+        width: 234px;
+        background:#fff;
+        float: left;
+        /* padding-right: 8px; */
+    }
+    .brand-list-title{
+        background:#fff;
+        height: 54px;
+        line-height: 54px;
+         padding-left: 11px;
+        font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
+
+
+     }
+     .brand-title-cn{
+        font-weight: 700;
+        font-size:18px;
+        color:#333;
+        margin-right: 4px;
+     }
+     .brand-title-en{
+        font-weight: 700;
+        font-size:14px;
+        color:#333;
+       
+     }
+     .brand-more{
+         float:right;
+         /* width: 18px; */
+         height: 40px;
+         margin-top: 4px;
+         margin-right: 11px;
+         color:#666;
+         font-size:16px;
+        }
+     .brand-more img{
+
+        width: 18px;
+         height: 18px;
+     }
+     .brand-more-more{
+         line-height: normal;
+         /* 垂直对齐方式 */
+           vertical-align: 3px;
+     }
+   
+     .brand-list-img img{
+        width: 234px;
+        height: 316px;
+        display: block;
+        /* background-color:#fff; */
+        }
+    .brand-list-img img:hover{
+        opacity:0.8;
+        /* filter:alpha(opacity=80); */
+    }
+  
