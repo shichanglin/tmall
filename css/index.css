@@ -85,9 +85,8 @@
 }
 /* 主要内容 */
     .content{
-        height: 1000px;
-  
-        background: url("../images/bg.jpg") center -207px no-repeat;
+        height: 2000px;
+        background: url("../images/bg.png") center -207px no-repeat;
 
     }
     .slide-content{
@@ -423,4 +422,71 @@
         opacity:0.8;
         /* filter:alpha(opacity=80); */
     }
+    
+    .many-brands{
+        /* background:pink; */
+        margin-top: 15px;
+    
+    }
+    .many-brands{
+
+        background-color: #Ccc;
+        /* margin-right:-2px; */
+
+    }
+    .many-brands li{
+        float:left;
+        width: 122px;
+        height: 108px;
+        background: #fff;
+        overflow: hidden;
+        position: relative;
+        margin-right: 1px;
+        margin-bottom: 1px;
+       
+    }
+    .many-brands li img{
+        width: 82%;
+        height: 50px;
+        display: block;
+        margin: 30px auto;
+    }
+    .many-logos-botton{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        background: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        opacity: 0;
+        transition:opacity 0.5s ease;
+
+
+    }
+    .coupon{
+        /* text-overflow: hidden; */
+        
+        /* overflow: hidden; */
+        color: #fff;
+        text-align: center;
+        margin-top:38px;
+        overflow: hidden;
+        font-size:18px;
+        text-overflow: ellipsis;
+    }
   
+    .enter{
+        display: inline-block;
+        width: 63px;
+        height: 18px;
+        line-height: 18px;
+        background: #ff0036;
+        color: #fff;
+        text-align: center;
+        border-radius:9px;
+        margin-top:5px;
+    }
+    .many-brands li:hover .many-logos-botton{
+        opacity: 1;
+    }
