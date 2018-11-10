@@ -85,6 +85,7 @@
 }
 /* 主要内容 */
     .content{
+        font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
         height: 2000px;
         background: url("../images/bg.png") center -207px no-repeat;
 
@@ -490,3 +491,180 @@
     .many-brands li:hover .many-logos-botton{
         opacity: 1;
     }
+.tmall-market{
+
+    /* position: absolute */
+    /* background-color:red; */
+    height: 665px;
+    margin-top:362px;
+
+}
+.tmall-market img{
+    /* display: inline-block; */
+    width: 214px;
+    height: 25px;
+}
+.hot-words{
+    float: right;
+    width: 800px;
+    height: 31px;
+    text-align: right;
+}
+.hot-words a{
+    /* padding-bottom:5px; */
+    color:#000;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin: 5px 10px;
+    font-size: 14px;
+    /* border: none; */
+    border-bottom: 1px solid #f5f5f5;
+   
+}
+
+.hot-words a:hover{
+    border-bottom: 1px solid #000;
+}
+.tmall-market .tmall-pic img{
+   
+    width: 235px;
+    height: 618px;
+    transition: opacity 0.2s ease-out;
+
+}
+.tmall-market .tmall-pic img:hover{
+    opacity: 0.7;
+}
+.tmall-market .tmall-pic{
+    float:left;
+    display:inline-block;
+    position: relative;
+    color:#ffffff;
+}
+.tmall-left{
+    width: 70px;   
+     height: 64px;
+    background:rgba(0,0,0,0.9);
+    position: absolute;
+    bottom:122px;
+    left:0;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.tmall-left span{
+    padding-top:7px;
+    display: inline-block;
+    width: 36px;
+    height: 48px;
+    vertical-align: middle;
+    line-height: 24px;
+    font-size: 18px;
+    overflow: hidden;
+}
+.tmall-right{
+    background:rgba(0,0,0,0.6);
+    position: absolute;
+   bottom:122px;
+   left:70px;
+   width: 128px;   
+   height: 64px;
+   text-align: center;
+   vertical-align: middle;
+}
+.tmall-right span{
+    display: inline-block;
+    width:114px;
+    height: 24px;
+    vertical-align: middle;
+    line-height: 24px;
+    font-size: 18px;
+    overflow: hidden;
+
+}
+.tmall-right .dingding{
+    margin-top:8px;
+    
+
+}
+.tmall-tubiao{
+    width: 235px;   
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.tmall-market .tmall-pic .tmall-tubiao img{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+}
+.tmall-market-concent{
+    width: 995px;
+    height: 618px;
+    background:pink;
+    float:left;
+   
+}
+.tmall-market-left{
+    width: 484px;
+    height: 301px;
+    margin-left: 13px;
+    float: left;
+    display: block;
+    border-bottom: 15px solid #f5f5f5;
+    position: relative;
+    background-color: #fff;
+}
+.tmall-market-concent .tmall-market-right{
+    float: left;
+    display: block;
+    border-bottom: 15px solid #f5f5f5;
+    position: relative;
+    background-color: #fff;
+    width: 235px;
+    height: 301px;
+    margin-left: 13px;
+    text-align: center;
+}
+.tmall-market-list{
+    width: 234px;
+    height: 300px;
+    border: 1px solid #fff;
+
+
+}
+.tmall-market-concent .haha{
+    width: 68px;
+    height: 20px;
+}
+.tmall-market-concent .tmall-market-list img{
+
+    width: 185px;
+    height: 185px;   
+}
+.hahaya{
+    
+    width: 135px;
+    height: 40px;
+    line-height: 20px;
+    font-size:14px;
+    color:black;
+    margin: 8px auto;
+    overflow:hidden;
+
+}
+.tmall-price{
+    font-size: 18px;
+    color: #FF0036;
+    line-height: 18px;
+    margin: 10px auto;
+}
+.tmall-market-concent .tmall-market-list:hover{
+
+border: 1px solid #ff0036;
+opacity:0.8;
+}
