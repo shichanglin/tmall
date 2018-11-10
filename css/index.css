@@ -655,7 +655,7 @@
     color:black;
     margin: 8px auto;
     overflow:hidden;
-
+    
 }
 .tmall-price{
     font-size: 18px;
@@ -665,6 +665,7 @@
 }
 .tmall-market-concent .tmall-market-list:hover{
 
-border: 1px solid #ff0036;
-opacity:0.8;
+    border: 1px solid #ff0036;
+    opacity:0.8;
+
 }
