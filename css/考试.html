@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    div{
+
+        width: 200px;
+        height: 200px;
+        border:1px solid red;
+
+    }
+    .one{
+       
+        position: absolute;
+        left:0;
+        top:0;
+    }
+    .two{
+        
+        position: absolute;
+        left:201px;
+        top:0;
+            }
+    .three{
+        
+        position:absolute;
+        left:0;
+        top:201px;
+    }
+    .four{
+
+        position:absolute;
+        left:201px;
+        top:201px;
+    }
+    div:hover{
+
+        z-index: 1;
+        border:1px solid green;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+</body>
+</html>
