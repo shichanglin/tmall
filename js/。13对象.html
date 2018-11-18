@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var person1 = {
+        height:180,
+        school:'ss',
+        play:function(a){
+            console.log(this.name +"wass" +a);
+        }
+    }
+
+    //this 当前对象
+        console.log(person1.name);
+        person1.play('哈哈哈');
+
+        var person2 =  new Object();
+        person2.name ="李四";
+        person2.name ="李四";
+        person2.name ="李四";
+        pesson2.sleep = function(){
+            console.log("我正在睡觉");
+        }
+    
+    </script>
+</body>
+</html>
