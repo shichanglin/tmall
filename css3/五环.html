@@ -1,163 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        .beibei {
-            float: left;
-            width: 200px;
-            height: 200px;
-            border: 15px solid blue;
-            border-radius: 150px;
-            margin-right:10px;
-            position:absolute;
-            left: 0px;
-            top:0px;
-        }
-       
-    
-        .jingjing{
-            float: left;
-            width: 200px;
-            height: 200px;
-            border: 15px solid black;
-            margin-right:10px;
-            border-radius: 50%;
-            position:absolute;
-            left: 238px;
-            top:0px;
-        }   
-        
-        .huanhuan {
-            float: left;
-            width: 200px;
-            height: 200px;
-            border: 15px solid red;
-            border-radius: 150px;
-            position:absolute;
-            left: 479px;
-            top:0px;
-
-        }
-        .yingying {
-            float: left;
-            position: absolute;
-            top:135px;
-            left:120px;
-            width: 200px;
-            height: 200px;
-            border: 15px solid yellow;
-            border-radius: 50%;
-          
-        }
-        .nini {
-            float: left;
-            position: absolute;
-            top:135px;
-            left:355px;
-            width: 200px;
-            height: 200px;
-            border: 15px solid green;
-            border-radius: 150px;
-        }
-   
-        .beibei11 {
-            z-index:1;
-            float: left;
-            width: 200px;
-            height: 200px;
-            border: 15px solid blue;
-            border-radius: 150px;
-            margin-right:10px;
-            position:absolute;
-            left: 0px;
-            top:0px;
-            border-bottom-color: transparent;
-        }
-    
-        .jingjing22 {
-            z-index:1;
-            float: left;
-            width: 200px;
-            height: 200px;
-            border: 15px solid black;
-            margin-right:10px;
-            border-radius: 50%;
-            position:absolute;
-            left: 238px;
-            top:0px;
-            border-left-color: transparent;
-            
-        }   
-        .huanhuan22 {
-            z-index: 1;
-            float: left;
-            width: 200px;
-            height: 200px;
-            border: 15px solid red;
-            border-radius: 150px;
-            position:absolute;
-            left: 479px;
-            top:0px;
-            border-left-color: transparent;
-            
-
-        }
-        .yingying22 {    
-            float: left;
-            position: absolute;
-            top:135px;
-            left:120px;
-            width: 200px;
-            height: 200px;
-            border: 15px solid yellow;
-            border-radius: 150px;
-            border-right-color:transparent;
-        }
-        .nini22{
-            z-index:1;
-
-            float: left;
-            position: absolute;
-            top:135px;
-            left:355px;
-            width: 200px;
-            height: 200px;
-            border: 15px solid green;
-            border-radius: 150px;
-            border-top-color: transparent;
-            border-right-color: transparent;
-           
-        }
-    
-    </style>
-
-
-</head>
-
-<body>
-   <div>
-        <div class="beibei"></div>
-        <div class="jingjing"></div>
-        <div class="huanhuan"></div>
-        <div class="yingying"></div>
-        <div class="nini"></div>
-        <div class="beibei11"></div>
-        <div class="jingjing22"></div>
-        <div class="huanhuan22"></div>
-        <div class="yingying22"></div>
-        <div class="nini22"></div>
-    </div>
-   
-  
-</body> 
-
-</html>  -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -165,47 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
-
-    <style>
-    #wuhuan div{
-      width: 200px;
+<style>
+    .contanier div{
+        width: 200px;
         height: 200px;
-        border:10px solid black;
-        border-radius: 50%;
+        border:10px solid #000;
+        border-radius:50%;
         position: absolute;
+        
     }
-    
-    #wuhuan div:nth-child(1){
-        border:10px solid blue;
 
-    }
-    #wuhuan div:nth-child(2){
-        border:10px solid black;
+       .contanier .first{
 
-    }
-    #wuhuan div:nth-child(3){
-        border:10px solid red;
+            border-color: blue;
+            left: 0;
+            top:0;
 
-    }
-    #wuhuan div:nth-child(4){
-        border:10px solid yellow;
+        }
+        .contanier .two{
 
-    }
-    #wuhuan div:nth-child(5){
-        border:10px solid green;
-        top: 114px;
-        left:340px;
-    }
+            border-color: #000;
+            left:230px;
+            top:0;
+
+
+        }
+          .contanier .three{
+
+            border-color: red;
+            left: 460px;
+            top:0px;
+        }
+        .contanier .four{
+
+            border-color: yellow;
+            left: 110px;
+            top:110px;
+
+        }
+        .contanier .five{
+            border-color: green;
+            left: 340px;
+            top: 110px;
+
+        }
+        .contanier .first-1{
+            border-color:blue;
+           
+            left: 0;
+            top:0;  
+            border-bottom:transparent;  
+
+        }
+        .contanier .two-2{
+        
+            left:239px;
+            top:0;
+            border-left:transparent;
+
+        }
+        .contanier .three-2{
+
+              border-color: red;
+              left: 469px;
+              top:0px;
+              border-left:transparent;
+         }
+        .contanier .five-2{
+            border-color: green;
+            left: 340px;
+            top: 119px;
+            border-top:transparent;
+            border-right: transparent;
+            
+
+        }
     </style>
+
 </head>
 <body>
-    <div id="wuhuan">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="contanier">
+        <div class="first"></div>
+        <div class="two"></div>
+        <div class="three" ></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="first-1"></div>
+        <div class="two-2"></div>
+        <div class="three-2" ></div>
+
+        <div class="five-2"></div>
+
     </div>
+    
+
 </body>
 </html>
