@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <pre>
     <script >
         // var line, i;
         // for (line = 1; line <= 5; line++) {
@@ -31,12 +30,12 @@
 	var line,i;
 	for(line=1;line<=5;line++)
 	{
-		document.write("                      ");
-		for(i=1;i<=5-line;i++) document.write(" ");
+		document.write("&nbsp;");
+		for(i=1;i<=5-line;i++) document.write("&nbsp;");
 		for(i=1;i<=line;i++)
 		{
 			document.write("*");
-			if (i>0) document.write(" ");
+			if (i>0) document.write("&nbsp;");
 		}
 		document.write("<br>");
 	}
@@ -44,7 +43,6 @@
 
 
     </script>
-    </pre>
 </body>
 
 </html>
