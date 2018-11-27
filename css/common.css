@@ -96,7 +96,7 @@ background: #ff2f7c;
 }
 
 /* 购物车 手机 导航 图标 */
-.icon-gouwucheman{
+.icon-03f{
     font-size: 12px;
     color: #FF0036;
 }
@@ -186,3 +186,25 @@ color:#999;
 .list-tel:hover .sub-qr{
     display: block;
 }
+/* 网站导航下拉列表 */
+#header .list-menu #web-list{
+    display: inline-block;
+    width: 1198px;
+    height: 161px;
+    background: red;
+     position: absolute;
+     top:40px;
+     right:0px;
+    /* display:none; */
+
+}
+#web-list .web-menu{
+
+        width: 455px;
+        height: 110px;
+        padding-left:30px;
+
+
+}
+
+
