@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div1">
+
+        asdfg
+    </div>
+    <div class="a">
+
+        asdfg
+    </div>
+    <ul>
+        <li>111</li>
+        <li class="a">2222</li>
+        <li class="a">2222</li>
+        <li>2222</li>
+        <li class="a">2222</li>
+        <li class="a">2222</li>
+        <li>2222</li>
+        <li class="a b">2222</li>
+
+    </ul>
+
+    <script>
+        //获取元素
+        // document.getElementById() 通过id 获取元素  返回查找的dom对象
+        var oDiv = document.getElementById('div1');
+
+        oDiv.style.color = 'yellow';
+        //通过标签 获取元素 返回数组 数组中存放的是元素
+        //     var oLi = document.getElementsByTagName('li');
+        //         oLi[1].style.background = 'red';
+
+        // for(var i = 0;i<oLi.length;i++){
+
+
+        //         oLi[i].style.background = 'red';
+
+        // }
+
+        //通过 
+        // var aLi = document.getElementsByClassName('a');
+
+        // for(var i= 0; i < aLi.length ; i++){
+
+        //      aLi[i].style.background = 'red';
+
+        // }
+
+
+
+        //筛选出含有指定名字的 class
+        function getElementsByClass(clsName) {
+            //获取到页面中的所有元素
+            var result = [];
+            var allEle = document.getElementsByTagName('*');
+            //循环每一个元素 
+            for (var i = 0; i < allEle.length; i++) {
+                //class  时保留字  用className渠道class名
+                //'a  b c' == ["a" , 'b','c']通过split 方法将字符串分割成数组
+                var arr = allEle[i].className.split(' ');//[' a ' , 'b ']
+                
+                for (var k = 0; k < arr.length; k++) {
+                    if (arr[k] == clsName) {
+                        //判断class名  == 传递进来的clsName  push 到数组
+                        result.push(allEle[i]);
+                    }
+                }
+            }
+            return result;
+        }
+
+
+        //返回所有class名  为a的元素数组
+        var a2 = getElementsByClass("a");
+        for (var j = 0; j < a2.length; j++) {
+            a2[j].style.background = 'pink';
+        }
+
+
+    </script>
+</body>
+
+</html>
