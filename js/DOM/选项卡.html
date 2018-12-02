@@ -1,25 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            overflow: hidden;
+            list-style: none;
+        }
+        li {
+            float: left;
+            width: 100px;
+            height: 30px;
+            background: #ff0036;
+            margin-right: 3px;
+            cursor: pointer;
+        }
+        #content div {
+            display: none;
+            width: 306px;
+            height: 180px;
+            background: #ccc;
+
+        }
+        #content div.active {
+            display: block;
+        }
+        li.selected {
+            background: green;
+        }
+    </style>
 </head>
 
 <body>
-
-
-
+    <div id="container">
+        <div id="btn-box">
+            <ul>
+                <li class="selected">111</li>
+                <li>222</li>
+                <li>333</li>
+            </ul>
+        </div>
+        <div id="content">
+            <div class="active">contant111</div>
+            <div>contant222</div>
+            <div>contant3333</div>
+        </div>
+    </div>
 
     <script>
-    
-    
-    
-    
-    
-    
-    
+        var ali = document.getElementsByTagName('li');
+        var oContent = document.getElementById('content');
+        var aDiv = oContent.getElementsByTagName('div');
+        for (var i = 0; i < ali.length; i++) {//页面加载的时候就执行 给三个li都绑定点击事件
+          
+          
+          ali[i].index = i;//ali[0].index = 0 ali[1].index = 1 ali[2].index = 2
+          
+            ali[i].onclick = function () {
+                //点击的元素加上selected  class 名
+                //i = 3;  所以 ali  会返回undefined;
+                //console.log('')
+                //this 对当前对象的应用 点击的是谁 this就是谁；
+
+                for (var j = 0; j < ali.length; j++) {//清除出所有的里的className；
+                    ali[j].className = '';
+
+                   aDiv[j].className= ''; 
+                }
+                this.className = 'selected';//给自添加class = selected；
+                
+                aDiv[this.index].className = 'active';
+
+
+
+            }
+
+        }
+//onmouseover 鼠标划入
+
+
+
+
+
+
+
+
     </script>
 </body>
+
 </html>
