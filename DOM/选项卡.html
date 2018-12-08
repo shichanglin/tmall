@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
         }
+
         ul {
             overflow: hidden;
             list-style: none;
@@ -23,6 +24,7 @@
             margin-right: 3px;
             cursor: pointer;
         }
+
         #content div {
             display: none;
             width: 306px;
@@ -38,7 +40,6 @@
         }
     </style>
 </head>
-
 <body>
     <div id="container">
         <div id="btn-box">
@@ -54,45 +55,27 @@
             <div>contant3333</div>
         </div>
     </div>
-
     <script>
         var ali = document.getElementsByTagName('li');
         var oContent = document.getElementById('content');
         var aDiv = oContent.getElementsByTagName('div');
         for (var i = 0; i < ali.length; i++) {//页面加载的时候就执行 给三个li都绑定点击事件
-          
-          
-          ali[i].index = i;//ali[0].index = 0 ali[1].index = 1 ali[2].index = 2
-          
+            ali[i].index = i;//ali[0].index = 0 ali[1].index = 1 ali[2].index = 2
             ali[i].onclick = function () {
                 //点击的元素加上selected  class 名
                 //i = 3;  所以 ali  会返回undefined;
                 //console.log('')
                 //this 对当前对象的应用 点击的是谁 this就是谁；
-
                 for (var j = 0; j < ali.length; j++) {//清除出所有的里的className；
                     ali[j].className = '';
-
-                   aDiv[j].className= ''; 
+                    aDiv[j].className = '';
                 }
                 this.className = 'selected';//给自添加class = selected；
-                
                 aDiv[this.index].className = 'active';
-
-
-
             }
 
         }
-//onmouseover 鼠标划入
-
-
-
-
-
-
-
-
+        //onmouseover 鼠标划入
     </script>
 </body>
 

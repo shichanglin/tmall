@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+
+
+            margin: 0;
+            padding: 0;
+        }
+
+        #ul1 {
+            width: 200px;
+            list-style: none;
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 5px 0;
+            border: 1px solid #eee;
+            background: #fff;
+
+            border-radius: 5px;
+
+        }
+
+        #ul1 li {
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            color: rgb(88, 84, 84);
+            font-size: 14px;
+
+        }
+
+        #ul1 li:hover {
+
+            background: rgb(171, 171, 231);
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul id='ul1'>
+
+        <li>11</li>
+        <li>22</li>
+        <li>33</li>
+        <li>44</li>
+        <li>55</li>
+
+    </ul>
+
+    <script>
+        var Oul = document.getElementById('ul1');
+        var Oli = document.getElementsByTagName('li');
+        document.oncontextmenu = function (e) {
+            Oul.style.display = 'block';
+            Oul.style.left = e.clientX + 'px';
+            Oul.style.top = e.clientY + 'px';
+            return false;//适合任何浏览器
+            //组织默认行为  或者 e.preventDefault() 标准浏览器下；
+            // IE浏览器 下  e.returnValue = false ;
+        }
+        document.onclick = function () {
+            Oul.style.display = 'none';
+        }
+        for (var i = 0; i < Oli.length; i++) {
+            Oli[i].onclick = function () {
+                    //innerHTML 获取当前属性；
+                console.log(this.innerHTML);
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+
+
+            padding: 0;
+            margin: 0;
+
+        }
+
+        ul {
+            list-style: none;
+
+        }
+        #ul1 {
+            width: 160px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            padding: 5px 0;
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        #ul1 li {
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            color: #555;
+            font-size: 12px;
+
+        }
+        #ul1 li:hover {
+
+            background: rgb(166, 166, 223);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="ul1">
+        <li>你好</li>
+        <li>天知道</li>
+        <li>我快要</li>
+        <li>睡不着</li>
+        <li>呵呵呵</li>
+    </ul>
+
+
+    <script>
+
+        var oUl = document.getElementById('ul1');
+        var oli = document.getElementsByTagName('li');
+        document.oncontextmenu = function (e) {
+            // IE浏览器下 用 window.event
+            // e = e||window.event
+            oUl.style.display = 'block';
+            oUl.style.left = e.clientX + 'px';
+            oUl.style.top = e.clientY + 'px';
+            return false;//阻止默认行为
+        }
+        document.onclick = function () {
+            oUl.style.display = 'none';
+        }
+    for ( var i = 0; i < oli.length;i++){
+
+    oli[i].onclick = function(){
+        this.innerHTML;
+    }
+
+    }
+
+    </script>
+
+</body>
+
+</html>

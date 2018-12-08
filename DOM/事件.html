@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <style>
+    
+    #div1{
+
+
+
+        width: 200px;
+        height: 200px;
+    }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- 事件三要素
+    
+        1、事件源:点击谁触发的事件  谁就是事件源
+        2、事件处理函数 
+        3、事件
+    
+    -->
+
+
+    <div id="div1">
+
+        asdfasdf
+    </div>
+
+    <script>
+
+        var odiv = document.getElementById('div1');
+
+        odiv.onclick =function(e){
+            // alert('hahahah');
+            //事件源
+            console.log(e.target);
+            //取鼠标左边的
+            console.log(e.clientX);
+            console.log(e.clientY);
+
+            
+
+
+
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

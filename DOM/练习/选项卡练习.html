@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        ul {
+            overflow: hidden;
+            list-style: none;
+        }
+
+        li {
+            float: left;
+            width: 100px;
+            height: 30px;
+            background: #ff0036;
+            margin-right: 3px;
+            cursor: pointer;
+        }
+
+        #box div {
+            display: none;
+            width: 306px;
+            height: 180px;
+            background: #80ffff;
+        }
+
+        #box div.active {
+            display: block;
+        }
+
+        li.selected {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contener">
+        <div id="header">
+            <ul>
+                <li id="selected">111</li>
+                <li>222</li>
+                <li>333</li>
+            </ul>
+        </div>
+        <div id="box">
+            <div class="active">11111111</div>
+            <div>2222222</div>
+            <div>3333333</div>
+        </div>
+    </div>
+    <script>
+        var Ali = document.getElementsByTagName('li');
+        var Obox = document.getElementById('box');
+        var Adiv = Obox.getElementsByTagName('div');
+        for (var i = 0; i < Ali.length; i++) {
+            Ali[i].index = i;
+            Ali[i].onclick = function () {
+                for (var j = 0; j < Ali.length; j++) {
+                    Ali[j].className = '';
+                    Adiv[j].className = '';
+                }
+                this.className = 'selected';
+                Adiv[this.index].className = 'active';
+            }
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>
